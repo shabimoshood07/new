@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -30,24 +35,20 @@
     </header>
 
     <div class="container">
-        <aside>
-            <h2>Search for City</h2>
-            <form id="search-form">
-                <input type="text" id="city-input" placeholder="City Name" />
-                <button type="submit" id="search-button">Search</button>
-            </form>
-            <div id="search-history-container"></div>
-        </aside>
-    
-        <div class="forecast">
-            <div id="todays-forecast"></div>
-    
-            <div id="five-day-container">
-                
-            </div>
-    
-        </div>
-    
+      <aside>
+        <h2>Search for City</h2>
+        <form id="search-form">
+          <input type="text" id="city-input" placeholder="City Name" />
+          <button type="submit" id="search-button">Search</button>
+        </form>
+        <div id="search-history-container"></div>
+      </aside>
+
+      <div class="forecast">
+        <div id="todays-forecast"></div>
+
+        <div id="five-day-container"></div>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
